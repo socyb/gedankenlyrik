@@ -1,2 +1,0 @@
-# gedankenlyrik
-Poetry and Imagery
