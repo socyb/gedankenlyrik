@@ -51,10 +51,11 @@
             padding: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
             transition: transform 2s;
-            width: 50%;
+            width: 70%;
             position: fixed;
-            right: 50px;
-            top: 20%;
+            right: 10px;
+            top: 10%;
+          
         }
 
         .image-frame:hover {
@@ -108,6 +109,31 @@
             0% { opacity: 0.5; }
             100% { opacity: 1; }
         }
+        @media (max-width: 600px) {
+            .poem {
+                font-size: 1em;
+                width: 90%;
+                margin-bottom: 200px;
+            }
+
+            .image-frame {
+                width: 90%;
+                margin-top: 650px; /* Reduce margin-top to reduce gap */
+                padding: 20px; /* Reduce padding to reduce gap */
+                padding-left: 0; /* Increase left padding */
+              
+                margin-left: auto; /* Center the image frame */
+                margin-right: auto; /* Center the image frame */
+                display: flex;
+                justify-content: center;
+            }
+
+            .content {
+                flex-direction: column;
+                align-items: center;
+
+            }
+        }
     </style>
 </head>
 <body>
@@ -116,30 +142,30 @@
         <div class="poem">
             <!-- Poem lines will be added here -->
 <p>Der Gott der Stadt</p><br>
-            <p>Broadly he sits upon a block of stone.</p>
-<p>The winds lie black around his mighty brow.</p>
-<p>He glares in rage where, far and all alone,</p>
-<p>The last few houses lose themselves somehow.</p>
+<p>En un bloque de casas se sienta ancho.</p>
+<p>Los vientos negros reposan en su frente.</p>
+<p>Mira con furia, donde en soledad lejana</p>
+<p>Las últimas casas se pierden en la tierra.</p>
 
-<p>His red-streaked belly glows before the night,</p>
-<p>The great cities kneel in awe at his feet.</p>
-<p>The endless bells of churches reach his height,</p>
-<p>Rising from black towers in waves complete.</p>
+<p>Desde el crepúsculo incandesce su vientre rojo hacia Baal,</p>
+<p>Las grandes ciudades –a su alrededor– se arrodillan ante él.</p>
+<p>El número inmenso de campanas de iglesia</p>
+<p>Ondea hasta él desde un mar de torres negras.</p>
 
-<p>Like Corybants, wild music shakes the air,</p>
-<p>The roaring millions fill the streets in fright.</p>
-<p>Factory smoke and chimneys' breath declare</p>
-<p>Incense-like vapors curling through the night.</p>
+<p>Como danza de coribantes resuena la música</p>
+<p>De millones a través de las calles en estruendo.</p>
+<p>El humo de las chimeneas, las nubes de la fábrica</p>
+<p>Se elevan hacia él, como incienso azulado.</p>
 
-<p>The brewing storm smolders in his deep brow,</p>
-<p>The darkened evening drowns in silent dread.</p>
-<p>Storms flutter, circling vultures watching now,</p>
-<p>His bristling hair stands raging on his head.</p>
+<p>La tormenta arde en sus cejas encendidas.</p>
+<p>La oscura tarde se ahoga en la noche.</p>
+<p>Los vendavales revolotean, como buitres observan</p>
+<p>Desde su cabellera, que en ira se eriza.</p>
 
-<p>He stretches forth his butcher’s fist so vast.</p>
-<p>He shakes it hard. A sea of fire then speeds</p>
-<p>Through narrow streets, a roaring furnace blast,</p>
-<p>Devouring all, till morning light proceeds.</p><br>
+<p>Extiende su puño carnicero en la oscuridad.</p>
+<p>Lo sacude. Un mar de fuego se desata</p>
+<p>Por una calle. Y la humareda ardiente ruge</p>
+<p>Y la devora, hasta que el alba finalmente ocurre.</p><br>
 <p>Georg Heym</p>
         </div>
         <div class="image-frame">
