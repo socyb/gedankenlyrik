@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEDANKENLYRIK</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            overflow: auto;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: linear-gradient(45deg, #f3ec78, #af4261);
+            animation: backgroundAnimation 10s infinite alternate;
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        header, footer {
+            text-align: center;
+            padding: 1em;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+            padding: 20px;
+            overflow: auto;
+        }
+
+        .image-frame {
+            border: 10px solid rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            transition: transform 2s;
+            width: 70%;
+        }
+
+        .image-frame:hover {
+            transform: scale(1.05);
+        }
+
+        .image-frame img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .poem {
+            width: 30%;
+            font-family: 'UnifrakturCook', cursive;
+            font-size: 1.5em;
+            font-weight: bold;
+            animation: fadeIn 5s infinite alternate;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            color: white;
+        }
+
+        .poem p {
+            margin: 0;
+            padding: 5px 0;
+        }
+
+        .poem p:nth-child(1) { color: black; }
+        .poem p:nth-child(2) { color: scarlet; }
+        .poem p:nth-child(3) { color: lila; }
+        .poem p:nth-child(4) { color: white; }
+        .poem p:nth-child(5) { color: black; }
+        .poem p:nth-child(6) { color: scarlet; }
+        .poem p:nth-child(7) { color: lila; }
+        .poem p:nth-child(8) { color: white; }
+        .poem p:nth-child(9) { color: black; }
+        .poem p:nth-child(10) { color: scarlet; }
+        .poem p:nth-child(11) { color: lila; }
+        .poem p:nth-child(12) { color: white; }
+        .poem p:nth-child(13) { color: black; }
+        .poem p:nth-child(14) { color: scarlet; }
+        .poem p:nth-child(15) { color: lila; }
+        .poem p:nth-child(16) { color: white; }
+        .poem p:nth-child(17) { color: black; }
+        .poem p:nth-child(18) { color: scarlet; }
+        .poem p:nth-child(19) { color: lila; }
+        .poem p:nth-child(20) { color: white; }
+
+        @keyframes fadeIn {
+            0% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>GEDANKENLYRIK</header>
+    <div class="content">
+        <div class="poem">
+            <!-- Poem lines will be added here -->
+            <p>Auf einem Häuserblocke sitzt er breit.</p>
+            <p>Die Winde lagern schwarz um seine Stirn.</p>
+            <p>Er schaut voll Wut, wo fern in Einsamkeit</p>
+            <p>Die letzten Häuser in das Land verirrn.</p>
+            
+            <p>Vom Abend glänzt der rote Bauch dem Baal,</p>
+            <p>Die großen Städte knien um ihn her.</p>
+            <p>Der Kirchenglocken ungeheure Zahl</p>
+            <p>Wogt auf zu ihm aus schwarzer Türme Meer.</p>
+            
+            <p>Wie Korybanten-Tanz dröhnt die Musik</p>
+            <p>Der Millionen durch die Straßen laut.</p>
+            <p>Der Schlote Rauch, die Wolken der Fabrik</p>
+            <p>Ziehn auf zu ihm, wie Duft von Weihrauch blaut.</p>
+            
+            <p>Das Wetter schwelt in seinen Augenbrauen.</p>
+            <p>Der dunkle Abend wird in Nacht betäubt.</p>
+            <p>Die Stürme flattern, die wie Geier schauen</p>
+            <p>Von seinem Haupthaar, das im Zorne sträubt.</p>
+            
+            <p>Er streckt ins Dunkel seine Fleischerfaust.</p>
+            <p>Er schüttelt sie. Ein Meer von Feuer jagt</p>
+            <p>Durch eine Straße. Und der Glutqualm braust</p>
+            <p>Und frißt sie auf, bis spät der Morgen tagt.</p>
+        </div>
+        <div class="image-frame">
+            <img src="image.jpg" alt="Responsive Image">
+        </div>
+    </div>
+    <footer>ÆviternÆ 2025</footer>
+</body>
+</html>
