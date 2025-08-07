@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lírica del Pensamiento</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #2b6761;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1.5rem;
+    }
+
+    .card-container {
+      perspective: 1000px;
+      width: 90vw;
+      max-width: 400px;
+      height: 500px;
+      margin: 20px auto;
+    }
+
+    .card {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 1s;
+      cursor: pointer;
+    }
+
+    .card.flipped {
+      transform: rotateY(180deg);
+    }
+
+    .card-face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .card-front {
+      background-color: #2b6761;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 1rem;
+      line-height: 1.5;
+      white-space: pre-wrap;
+    }
+
+    .card-back {
+      background-color: #2b6761;
+      transform: rotateY(180deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card-back img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lírica del Pensamiento</h1>
+
+  <div class="card-container" onclick="toggleFlip()">
+    <div class="card" id="card">
+      <div class="card-face card-front">
+        Me imagino un aguamarina
+        profundo, manso y metal
+        En donde todas las Stimmungen desembocan por una última vez
+        Deshaciéndose como colores de cintas en colores de salvados por la campana 🔔
+        Suena en la totalidad del espectro Live to Tell y pasan ráfagas de
+        ámbitos de sentido no exploradas –canicas mercuriales de Punkte von Ichs–
+        la bobba bursts into the grooves
+        carvando una frialdad cerebral de la mónada que explota,
+        la crisantema eléctrica se despetala en nieves mercuriales…
+        Queremos la experiencia del límite en el lenguaje.
+        Un elefante 🐘…
+      </div>
+      <div class="card-face card-back">
+        <img src="aguamarina.PNG" alt="Imagen generada" />
+      </div>
+    </div>
+  </div>
+
+  <footer>6 de agosto de 2025 — Hélio Automatikos</footer>
+
+  <script>
+    function toggleFlip() {
+      document.getElementById('card').classList.toggle('flipped');
+    }
+  </script>
+</body>
+</html>
